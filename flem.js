@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 // Webhook secret
 const secret = "e5f2d4g6h8j0k2l4m6n8p0q";
 
+
 // Send email function (for demonstration purposes only)
 function sendEmail(to, subject, body) {
     console.log(`Sending email to ${to} with subject "${subject}" and body "${body}"`);
