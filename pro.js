@@ -24,7 +24,7 @@ axios.post(`https://api.github.com/repos/${repository}/hooks`, {
   active: true,
   events: ["push"],
   config: {
-    url: "https://821c-149-34-244-178.eu.ngrok.io/webhooks/github",
+    url: "https://localhost:3000/webhooks/github",
     content_type: "json",
     secret: secret,
   },
