@@ -32,8 +32,10 @@ async function get_hash() {
             var reps = commits[i].repo
             var shs = commits[i].sha
             if (rep == reps) {
-                if (sh != shs)
+                if (sh != shs) {
                     console.log("ok")
+                    commits[i].sha = sh
+                }
             }
         }
     }
